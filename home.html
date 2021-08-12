@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="home.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <img id="image" src="icons/logo used in header.svg" alt="logo">
+        <div class="nav-links">
+            <p id="dash">DASHBOARD</p>
+            <p>CONTENT</p>
+            <p>USERS</p>
+            <p>REPORTS</p>
+            <p>ADMIN</p>
+        </div>
+        <div class="nav">
+
+            <div class="alert">
+               
+                <p><i id="alert_icon" class="material-icons">notifications_active</i></p>
+                <span class="badge">1</span>
+                
+                <div class="allAlerts">
+
+                </div>
+                <div class="alert_footer">
+                    <p><button>SHOW ALL</button></p>
+                </div>
+            </div>
+
+            <div class="announcement">
+                <p> <img src="icons/announcements.svg" alt=""></p>
+                <span class="badge">2</span>
+                
+                <div class="allAnnouncements">
+
+                </div>
+                <div id="announcement_footer">
+                    <p><button>SHOW ALL</button></p>
+                    <span></span>
+                    <p><button>CREATE NEW</button></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="uset_profile">
+            <img src="images/mypic.png" alt="user_pic">
+            <span class="badge">T</span>
+        </div>
+        <div class="dropdown">
+            <i id="Hamburger-menu" id="material-icons" class="material-icons" >menu</i>
+            <div class="small">
+                    <div>
+                        <p id="dash">DASHBOARD</p>
+                    </div>
+                    <div>
+                        <p>CONTENT <span id="material-icons" class="material-icons">keyboard_arrow_down</span></p>
+                        <p id="sub-dropdown">COURSE CATALOG</p>
+                    </div>
+                    <div>
+                        <p>USERS<span id="material-icons" class="material-icons">keyboard_arrow_down</span></p>
+                        <p id="sub-dropdown">COURSE CATALOG</p>
+                    </div>
+                    <div>
+                        <p>REPORTS <span id="material-icons" class="material-icons">keyboard_arrow_down</span></p>
+                        <p id="sub-dropdown">COURSE CATALOG</p>
+                    </div>
+                    <div>
+                        <p>ADMIN <span id="material-icons" class="material-icons">keyboard_arrow_down</span></p>
+                        <p id="sub-dropdown">COURSE CATALOG</p>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="course_tab">
+        <div>
+            <img src="icons/courses.svg" alt="">
+            <p><strong>4 </strong> Courses</p>
+        </div>
+        <div>
+            <img src="icons/classes.svg" alt="">
+            <p><strong>4 </strong> Classes</p>
+        </div>
+    </div>
+    <div class="indicate">
+        <p>Showing 4 of 4 Contents</p>
+        <div>
+            <p>Sort by:</p>
+            <select name="sort" id="sort">
+                <option value="#">Course Name</option>
+            </select>
+            <img src="icons/sort.svg" alt="">
+        </div>
+    </div>
+    <hr>
+    <div class="main">
+        <!-- <div class="one">
+            <div class="two ">
+                <img src="images/imageMask.png" alt="">
+                <div> 
+                    <p>Acceleration</p> 
+                    <div id="grade">
+                        <p>Physics</p>
+                        <p>Grade</p>
+                    </div>
+                    <p>
+                        <strong>4 </strong> Units  <strong>18</strong> Lessons <strong>24 </strong>Topics 
+                    </p>
+                    <select name="tech" id="tech" >
+                        <option value="#">Mr. Frank's Class B</option>
+                    </select>
+                    <p><span>50 Students</span>21-Jan-2020 - 21-Aug-2020</p>
+                </div>
+                <img src="icons/favourite.svg" alt="star" id="star">
+            </div>
+            
+            <div class="icons">
+                <img src="icons/preview.svg" alt="">
+                <img src="icons/manage course.svg" alt="">
+                <img src="icons/grade submissions.svg" alt="">
+                <img src="icons/reports.svg" alt="">
+            </div>
+        </div>
+
+        <div class="one">
+            <div class="two ">
+                <img src="images/imageMask-1.png" alt="">
+                <div>
+                    <p>Dispacement, Velocity and Speed</p>
+                    <div  id="grade">
+                        <p>Physics</p>
+                        <p>Grade</p>
+                    </div>
+                    <p>
+                        <strong>2 </strong> Units <strong>15 </strong> Lessons  <strong>20</strong>  Topics
+                    </p>
+                    <select name="tech" id="tech">
+                        <option value="#">No class</option>
+                    </select>
+                </div>
+                <img src="icons/favourite.svg" alt="star" id="star">
+            </div>
+            <div class="icons">
+                <img src="icons/preview.svg" alt="">
+                <img src="icons/manage course.svg" alt="">
+                <img src="icons/grade submissions.svg" alt="">
+                <img src="icons/reports.svg" alt="">
+            </div>
+        </div>
+
+        <div class="one">
+            <div class="two ">
+                <img src="images/imageMask-3.png" alt="">
+                <div>
+                    <p>Introduction to biology: Micro organisms and how they affect..</p>
+                    <div  id="grade">
+                        <p>Physics</p>
+                        <p>Grade</p>
+                    </div>
+                    <p>
+                        <strong>5 </strong> Units <strong>16 </strong> Lessons  <strong>22</strong>  Topics
+                    </p>
+                    <select name="tech" id="tech">
+                        <option value="#">All Classes</option>
+                    </select>
+                    <p><span>300 Students</span></p>
+                </div>
+                <img src="icons/favourite.svg" alt="star" id="star">
+            </div>
+            <div class="icons">
+                <img src="icons/preview.svg" alt="">
+                <img src="icons/manage course.svg" alt="">
+                <img src="icons/grade submissions.svg" alt="">
+                <img src="icons/reports.svg" alt="">
+            </div>
+        </div>
+
+        <div class="one">
+            <div class="two">
+                <img src="images/imageMask-2.png" alt="">
+                <div>
+                    <p>Introduction to High School Mathematics</p>
+                    <div  id="grade">
+                        <p>Mathematics</p>
+                        <p>Grade 8 <span style="color: green;">+3</span></p>
+                    </div>
+                    <select name="tech" id="tech">
+                        <option value="#">Mr. Frank's Class A</option>
+                    </select>
+                    <p><span>44 Students</span> 14-Oct 2019-20-Oct-2020</p>
+                </div>
+                <img src="icons/favourite.svg" alt="star" id="star">
+            </div>
+            <div class="icons">
+                <img src="icons/preview.svg" alt="">
+                <img src="icons/manage course.svg" alt="">
+                <img src="icons/grade submissions.svg" alt="">
+                <img src="icons/reports.svg" alt="">
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="contact">
+        <h6>About</h6>
+        <h6>Contact Us</h6>
+    </div>
+<div class="bottomc"> 
+    <div>
+        <img id="foot" src="icons/logo used in footer.svg" alt="foooter">
+        <h6>Copyright &#169; 2020-2021 </h6p>
+        <h6 <strong>Zeus Systems Pvt Ltd.</strong> </h6>
+        <h6>All rights reserved.</h6>
+    </div>
+</div>
+
+</body>
+</html>
